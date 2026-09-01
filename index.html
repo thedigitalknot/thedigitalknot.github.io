@@ -1,0 +1,3302 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<!-- ============================================= -->
+<!-- SEO & DOCUMENT SETTINGS -->
+<!-- ============================================= -->
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+
+<title>Nazal Sha & Aliya Fathima | Wedding Reception Invitation</title>
+
+<meta name="description" content="You are cordially invited to celebrate the wedding reception of Nazal Sha & Aliya Fathima on December 21, 2026.">
+
+<meta property="og:title" content="Nazal Sha & Aliya Fathima | Wedding Reception Invitation">
+<meta property="og:description" content="You are cordially invited to celebrate the wedding reception of Nazal Sha & Aliya Fathima on December 21, 2026.">
+<meta property="og:type" content="website">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Cinzel:wght@400;500;600&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,500;1,600&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<style>
+
+/* ============================================= */
+/* ROOT VARIABLES */
+/* ============================================= */
+
+:root {
+    --ivory: #fffdf9;
+    --cream: #f7f0e8;
+    --champagne: #dcc69e;
+    --gold: #b8945c;
+    --soft-gold: #d9c394;
+    --blush: #ead3d1;
+    --dusty-rose: #b98d8c;
+    --sage: #a9b5a0;
+    --lavender: #ddd5df;
+    --text: #4d4038;
+    --dark: #342a24;
+}
+
+
+/* ============================================= */
+/* RESET */
+/* ============================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    color: var(--text);
+    background: var(--cream);
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+}
+
+button,
+a {
+    -webkit-tap-highlight-color: transparent;
+}
+
+
+/* ============================================= */
+/* LOADING SCREEN */
+/* ============================================= */
+
+#loader {
+    position: fixed;
+    inset: 0;
+    z-index: 9999;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background:
+        radial-gradient(circle at center, rgba(255,255,255,.95), transparent 40%),
+        linear-gradient(135deg, #f9f2e9, #eadbd4, #f7efe5);
+
+    transition:
+        opacity 1.2s ease,
+        visibility 1.2s ease;
+}
+
+#loader.hide {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.loader-content {
+    text-align: center;
+    animation: loaderReveal 1.2s ease both;
+}
+
+.loader-emblem {
+    width: 105px;
+    height: 105px;
+    margin: 0 auto 28px;
+    position: relative;
+
+    animation: emblemFloat 3s ease-in-out infinite;
+}
+
+.loader-emblem::before,
+.loader-emblem::after {
+    content: "";
+    position: absolute;
+    inset: 12px;
+
+    border: 1px solid var(--gold);
+
+    border-radius: 50% 50% 45% 45%;
+
+    transform: rotate(45deg);
+}
+
+.loader-emblem::after {
+    inset: 30px;
+    opacity: .7;
+}
+
+.loader-name {
+    font-family: "Cormorant Garamond", serif;
+
+    font-size: clamp(2rem, 7vw, 4rem);
+
+    font-weight: 500;
+
+    color: var(--dark);
+}
+
+.loader-amp {
+    font-family: "Cormorant Garamond", serif;
+
+    font-size: 2rem;
+
+    color: var(--gold);
+
+    margin: 6px;
+}
+
+.loader-text {
+    margin-top: 24px;
+
+    font-size: .62rem;
+
+    text-transform: uppercase;
+
+    letter-spacing: .22em;
+
+    color: #8a7259;
+}
+
+
+/* ============================================= */
+/* MAIN SECTION STRUCTURE */
+/* ============================================= */
+
+.wedding-section {
+    position: relative;
+
+    min-height: 100vh;
+    min-height: 100svh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    overflow: hidden;
+
+    padding:
+        clamp(90px, 10vw, 120px)
+        clamp(20px, 5vw, 60px);
+}
+
+.section-content {
+    position: relative;
+
+    z-index: 10;
+
+    width: min(100%, 950px);
+
+    margin: auto;
+
+    text-align: center;
+}
+
+
+/* ============================================= */
+/* LIVE BACKGROUND SYSTEM */
+/* ============================================= */
+
+.background-gradient,
+.background-light,
+.bokeh,
+.pattern-layer {
+    position: absolute;
+    pointer-events: none;
+}
+
+.background-gradient {
+    inset: -8%;
+
+    animation:
+        slowZoom 18s ease-in-out infinite alternate;
+}
+
+.background-light {
+    width: 70vw;
+    height: 70vw;
+
+    max-width: 850px;
+    max-height: 850px;
+
+    border-radius: 50%;
+
+    filter: blur(65px);
+
+    opacity: .42;
+
+    animation:
+        lightMove 15s ease-in-out infinite alternate;
+}
+
+.bokeh {
+    inset: 0;
+
+    opacity: .7;
+
+    background-image:
+
+        radial-gradient(circle at 10% 20%, rgba(255,255,255,.9) 0 3px, transparent 4px),
+
+        radial-gradient(circle at 75% 18%, rgba(255,237,205,.8) 0 4px, transparent 5px),
+
+        radial-gradient(circle at 25% 78%, rgba(255,255,255,.65) 0 5px, transparent 6px),
+
+        radial-gradient(circle at 82% 70%, rgba(235,205,170,.7) 0 4px, transparent 5px);
+
+    background-size:
+        300px 320px,
+        420px 410px,
+        390px 450px,
+        520px 500px;
+
+    animation:
+        bokehMove 18s ease-in-out infinite alternate;
+}
+
+.pattern-layer {
+    inset: 0;
+
+    opacity: .09;
+
+    background-image:
+
+        linear-gradient(
+            30deg,
+            transparent 47%,
+            #b89562 48%,
+            transparent 49%
+        ),
+
+        linear-gradient(
+            -30deg,
+            transparent 47%,
+            #b89562 48%,
+            transparent 49%
+        );
+
+    background-size: 90px 90px;
+
+    mask-image:
+        radial-gradient(
+            circle at center,
+            black,
+            transparent 75%
+        );
+}
+
+
+/* ============================================= */
+/* UNIQUE BACKGROUNDS */
+/* ============================================= */
+
+/* HOME */
+
+#home .background-gradient {
+    background:
+
+        radial-gradient(
+            circle at 15% 20%,
+            #fffdf8,
+            transparent 38%
+        ),
+
+        radial-gradient(
+            circle at 85% 80%,
+            #ead6d4,
+            transparent 42%
+        ),
+
+        linear-gradient(
+            135deg,
+            #f9f2ea,
+            #f0e2dc,
+            #edf0e6
+        );
+}
+
+#home .background-light {
+    background: #fff0c9;
+
+    left: -20vw;
+    top: -15vw;
+}
+
+
+/* SAVE DATE */
+
+#date .background-gradient {
+    background:
+
+        radial-gradient(
+            circle at 20% 25%,
+            #f3dcdf,
+            transparent 40%
+        ),
+
+        radial-gradient(
+            circle at 82% 75%,
+            #f0e2c7,
+            transparent 40%
+        ),
+
+        linear-gradient(
+            145deg,
+            #faf6ee,
+            #ebe0d7,
+            #e4eadf
+        );
+}
+
+#date .background-light {
+    background: #f0cfa8;
+
+    right: -25vw;
+    bottom: -20vw;
+}
+
+
+/* RECEPTION */
+
+#celebration .background-gradient {
+    background:
+
+        radial-gradient(
+            circle at 15% 85%,
+            #dce6d7,
+            transparent 42%
+        ),
+
+        radial-gradient(
+            circle at 85% 18%,
+            #ead8ca,
+            transparent 40%
+        ),
+
+        linear-gradient(
+            135deg,
+            #f8f2e9,
+            #eee5dc,
+            #edf1e8
+        );
+}
+
+#celebration .background-light {
+    background: #e5c783;
+
+    right: -25vw;
+    top: 10%;
+}
+
+
+/* RSVP */
+
+#rsvp .background-gradient {
+    background:
+
+        radial-gradient(
+            circle at 20% 15%,
+            #fff8ed,
+            transparent 35%
+        ),
+
+        radial-gradient(
+            circle at 82% 18%,
+            #e7d1d0,
+            transparent 42%
+        ),
+
+        radial-gradient(
+            circle at 50% 90%,
+            #dce8d7,
+            transparent 45%
+        ),
+
+        linear-gradient(
+            145deg,
+            #f8efe6,
+            #eeddda,
+            #e7eee1
+        );
+}
+
+#rsvp .background-light {
+    background: #f2d397;
+
+    width: 85vw;
+    height: 85vw;
+
+    left: 10%;
+    top: 15%;
+}
+
+
+/* ============================================= */
+/* FLORAL ART SYSTEM */
+/* ============================================= */
+
+.floral {
+    position: absolute;
+
+    width: min(43vw, 540px);
+
+    opacity: .62;
+
+    filter:
+        drop-shadow(
+            0 18px 30px
+            rgba(100,70,50,.08)
+        );
+
+    pointer-events: none;
+
+    animation:
+        botanicalFloat
+        11s
+        ease-in-out
+        infinite
+        alternate;
+}
+
+.floral svg {
+    width: 100%;
+    height: auto;
+}
+
+.top-left {
+    left: -7%;
+    top: -5%;
+}
+
+.top-right {
+    right: -7%;
+    top: -5%;
+
+    transform: scaleX(-1);
+}
+
+.bottom-left {
+    left: -8%;
+    bottom: -8%;
+
+    transform: rotate(180deg);
+}
+
+.bottom-right {
+    right: -8%;
+    bottom: -8%;
+
+    transform:
+        rotate(180deg)
+        scaleX(-1);
+}
+
+.leaf {
+    fill: #94a48d;
+}
+
+.stem {
+    fill: none;
+
+    stroke: #aaa07f;
+
+    stroke-width: 2;
+}
+
+.rose {
+    fill: #e5c0be;
+}
+
+.white-flower {
+    fill: #fffdf8;
+}
+
+.center {
+    fill: #c3a06b;
+}
+
+
+/* ============================================= */
+/* ISLAMIC ARCH */
+/* ============================================= */
+
+.islamic-arch {
+    position: absolute;
+
+    width: min(78vw, 720px);
+
+    height: min(105vw, 780px);
+
+    border:
+        1px solid
+        rgba(184,148,92,.38);
+
+    border-bottom: none;
+
+    border-radius:
+        50% 50% 0 0 /
+        34% 34% 0 0;
+
+    z-index: 3;
+
+    pointer-events: none;
+
+    opacity: .8;
+}
+
+.islamic-arch::before {
+    content: "";
+
+    position: absolute;
+
+    inset: 18px;
+
+    border:
+        1px solid
+        rgba(184,148,92,.20);
+
+    border-bottom: none;
+
+    border-radius: inherit;
+}
+
+.islamic-arch::after {
+    content: "☾";
+
+    position: absolute;
+
+    top: 22px;
+
+    left: 50%;
+
+    transform:
+        translateX(-50%);
+
+    color: var(--gold);
+
+    font-size: 1.4rem;
+}
+
+
+/* ============================================= */
+/* TYPOGRAPHY */
+/* ============================================= */
+
+.arabic {
+    font-family: "Amiri", serif;
+
+    font-size:
+        clamp(1.5rem, 3vw, 2.4rem);
+
+    color: #7e674b;
+
+    margin-bottom:
+        clamp(20px, 4vw, 35px);
+}
+
+.eyebrow {
+    font-size:
+        clamp(.55rem, 1.3vw, .75rem);
+
+    letter-spacing: .28em;
+
+    text-transform: uppercase;
+
+    color: #89735c;
+
+    margin-bottom: 18px;
+}
+
+.reception-badge {
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    padding: 9px 18px;
+
+    margin-bottom: 24px;
+
+    border-radius: 50px;
+
+    border:
+        1px solid
+        rgba(184,148,92,.38);
+
+    background:
+        rgba(255,255,255,.32);
+
+    backdrop-filter: blur(10px);
+
+    color: var(--gold);
+
+    font-size: .55rem;
+
+    letter-spacing: .25em;
+
+    text-transform: uppercase;
+}
+
+.couple-names {
+    font-family:
+        "Cormorant Garamond",
+        serif;
+
+    font-size:
+        clamp(3.3rem, 10vw, 7.5rem);
+
+    font-weight: 500;
+
+    line-height: .82;
+
+    color: var(--dark);
+}
+
+.ampersand {
+    font-family:
+        "Cormorant Garamond",
+        serif;
+
+    color: var(--gold);
+
+    font-size:
+        clamp(2rem, 5vw, 3.5rem);
+
+    font-style: italic;
+
+    margin: 8px 0;
+}
+
+.invitation-message {
+    max-width: 620px;
+
+    margin:
+        clamp(20px, 4vw, 35px)
+        auto
+        0;
+
+    font-family:
+        "Cormorant Garamond",
+        serif;
+
+    font-size:
+        clamp(1.2rem, 2.5vw, 1.7rem);
+
+    line-height: 1.4;
+
+    font-style: italic;
+
+    color: #65564d;
+}
+
+
+/* ============================================= */
+/* BUTTON SYSTEM */
+/* ============================================= */
+
+.luxury-button {
+    appearance: none;
+
+    position: relative;
+
+    overflow: hidden;
+
+    display: inline-flex;
+
+    justify-content: center;
+    align-items: center;
+
+    margin-top:
+        clamp(25px, 5vw, 40px);
+
+    padding:
+        16px
+        30px;
+
+    border-radius: 50px;
+
+    border:
+        1px solid
+        rgba(184,148,92,.75);
+
+    background:
+        rgba(255,255,255,.35);
+
+    backdrop-filter:
+        blur(12px);
+
+    color: #6b553c;
+
+    text-decoration: none;
+
+    font-size: .64rem;
+
+    font-weight: 500;
+
+    letter-spacing: .19em;
+
+    text-transform: uppercase;
+
+    cursor: pointer;
+
+    transition:
+        .45s
+        cubic-bezier(.22,.61,.36,1);
+}
+
+.luxury-button::before {
+    content: "";
+
+    position: absolute;
+
+    width: 45px;
+    height: 180%;
+
+    left: -100px;
+    top: -40%;
+
+    transform:
+        rotate(25deg);
+
+    background:
+        rgba(255,255,255,.75);
+
+    transition: .8s ease;
+}
+
+.luxury-button:hover::before {
+    left: 130%;
+}
+
+.luxury-button:hover {
+    transform:
+        translateY(-3px);
+
+    background:
+        rgba(255,255,255,.65);
+
+    box-shadow:
+        0 15px 35px
+        rgba(120,90,55,.15);
+}
+
+
+/* ============================================= */
+/* SCROLL INDICATOR */
+/* ============================================= */
+
+.scroll-indicator {
+    margin-top: 30px;
+
+    font-size: .55rem;
+
+    text-transform: uppercase;
+
+    letter-spacing: .25em;
+
+    color: #987d5e;
+
+    animation:
+        scrollPulse
+        2.5s
+        ease-in-out
+        infinite;
+}
+
+
+/* ============================================= */
+/* SAVE THE DATE */
+/* ============================================= */
+
+.save-date-title {
+    font-family:
+        "Cinzel",
+        serif;
+
+    font-size:
+        clamp(.75rem, 2vw, 1rem);
+
+    letter-spacing: .4em;
+
+    color: var(--gold);
+
+    margin-bottom: 25px;
+}
+
+.date-number {
+    font-family:
+        "Cormorant Garamond",
+        serif;
+
+    font-size:
+        clamp(7rem, 20vw, 14rem);
+
+    line-height: .65;
+
+    color: var(--dark);
+}
+
+.date-month {
+    margin-top: 24px;
+
+    font-family:
+        "Cinzel",
+        serif;
+
+    font-size:
+        clamp(1.2rem, 3vw, 2rem);
+
+    letter-spacing: .25em;
+}
+
+.date-year {
+    margin-top: 8px;
+
+    font-family:
+        "Cinzel",
+        serif;
+
+    font-size:
+        clamp(2rem, 5vw, 4rem);
+}
+
+.weekday {
+    margin-top: 18px;
+
+    font-size: .65rem;
+
+    letter-spacing: .38em;
+
+    color: #8b755e;
+}
+
+.chapter-text {
+    margin: 25px auto;
+
+    font-family:
+        "Cormorant Garamond",
+        serif;
+
+    font-style: italic;
+
+    font-size:
+        clamp(1.2rem, 2.5vw, 1.6rem);
+}
+
+
+/* ============================================= */
+/* COUNTDOWN */
+/* ============================================= */
+
+.countdown {
+    width:
+        min(100%, 650px);
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    padding:
+        clamp(15px, 4vw, 28px);
+
+    gap: 8px;
+
+    border-radius: 24px;
+
+    border:
+        1px solid
+        rgba(184,148,92,.35);
+
+    background:
+        rgba(255,255,255,.38);
+
+    backdrop-filter:
+        blur(16px);
+
+    box-shadow:
+        0 25px 60px
+        rgba(80,60,40,.07);
+}
+
+.count-item {
+    border-right:
+        1px solid
+        rgba(184,148,92,.18);
+}
+
+.count-item:last-child {
+    border-right: none;
+}
+
+.count-number {
+    font-family:
+        "Cormorant Garamond",
+        serif;
+
+    font-size:
+        clamp(1.8rem, 5vw, 3.3rem);
+
+    color: #5b493a;
+}
+
+.count-label {
+    margin-top: 3px;
+
+    font-size: .48rem;
+
+    letter-spacing: .18em;
+
+    text-transform: uppercase;
+
+    color: #9a8061;
+}
+
+
+/* ============================================= */
+/* RECEPTION DETAILS */
+/* ============================================= */
+
+.section-title {
+    font-family:
+        "Cinzel",
+        serif;
+
+    font-size:
+        clamp(1.4rem, 4vw, 2.5rem);
+
+    font-weight: 500;
+
+    letter-spacing: .16em;
+
+    color: var(--dark);
+
+    margin-bottom:
+        clamp(30px, 5vw, 45px);
+}
+
+.event-card {
+    width:
+        min(100%, 700px);
+
+    margin: auto;
+
+    padding:
+        clamp(22px, 5vw, 45px);
+
+    border-radius: 28px;
+
+    background:
+        rgba(255,255,255,.36);
+
+    backdrop-filter:
+        blur(18px);
+
+    border:
+        1px solid
+        rgba(184,148,92,.35);
+
+    box-shadow:
+        0 25px 65px
+        rgba(70,55,40,.08);
+}
+
+.event-row {
+    padding: 18px 0;
+
+    border-bottom:
+        1px solid
+        rgba(184,148,92,.18);
+}
+
+.event-row:last-child {
+    border-bottom: none;
+}
+
+.event-label {
+    font-size: .53rem;
+
+    letter-spacing: .28em;
+
+    text-transform: uppercase;
+
+    color: var(--gold);
+
+    margin-bottom: 8px;
+}
+
+.event-value {
+    font-family:
+        "Cormorant Garamond",
+        serif;
+
+    font-size:
+        clamp(1.3rem, 3vw, 1.9rem);
+
+    font-weight: 600;
+
+    color: #4f4037;
+}
+
+.event-location {
+    margin-top: 6px;
+
+    font-size:
+        clamp(.7rem, 2vw, .9rem);
+
+    color: #7f6d60;
+}
+
+
+/* ============================================= */
+/* RSVP SECTION */
+/* ============================================= */
+
+.final-title {
+    font-family:
+        "Cinzel",
+        serif;
+
+    font-size:
+        clamp(1.4rem, 4vw, 2.5rem);
+
+    font-weight: 500;
+
+    letter-spacing: .13em;
+
+    line-height: 1.5;
+
+    color: var(--dark);
+}
+
+.final-subtitle {
+    display: block;
+
+    font-size: .65em;
+
+    letter-spacing: .28em;
+
+    color: var(--gold);
+}
+
+.final-message {
+    max-width: 650px;
+
+    margin: 25px auto;
+
+    font-family:
+        "Cormorant Garamond",
+        serif;
+
+    font-size:
+        clamp(1.2rem, 2.5vw, 1.7rem);
+
+    font-style: italic;
+
+    line-height: 1.4;
+}
+
+.final-details {
+    display: grid;
+
+    gap: 12px;
+
+    margin-top: 25px;
+}
+
+.final-details div {
+    font-size:
+        clamp(.58rem, 1.5vw, .78rem);
+
+    letter-spacing: .2em;
+
+    text-transform: uppercase;
+
+    color: #715d4a;
+}
+
+.rsvp-intro {
+    margin-top: 25px;
+
+    font-size: .62rem;
+
+    letter-spacing: .22em;
+
+    text-transform: uppercase;
+
+    color: #9a8061;
+}
+
+.reception-divider {
+    width: 55px;
+    height: 1px;
+
+    margin: 26px auto;
+
+    background:
+        linear-gradient(
+            90deg,
+            transparent,
+            var(--gold),
+            transparent
+        );
+}
+
+.rsvp-button {
+    background:
+        linear-gradient(
+            135deg,
+            #c4a26a,
+            #987541
+        );
+
+    color: white;
+
+    border: none;
+
+    padding:
+        18px
+        42px;
+
+    box-shadow:
+        0 18px 40px
+        rgba(135,100,55,.22);
+}
+
+.rsvp-button:hover {
+    color: white;
+
+    transform:
+        translateY(-4px)
+        scale(1.02);
+}
+
+
+/* ============================================= */
+/* CONTACT PANEL */
+/* ============================================= */
+
+.contact-panel {
+    width: min(100%, 700px);
+
+    margin: 32px auto 0;
+
+    padding:
+        clamp(18px, 5vw, 34px);
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, 1fr);
+
+    gap: 14px;
+
+    border:
+        1px solid
+        rgba(184,148,92,.30);
+
+    border-radius: 28px;
+
+    background:
+        rgba(255,255,255,.30);
+
+    backdrop-filter:
+        blur(18px);
+
+    box-shadow:
+        0 25px 65px
+        rgba(80,60,40,.07);
+}
+
+.contact-card {
+    position: relative;
+
+    padding: 22px 16px;
+
+    border-radius: 20px;
+
+    background:
+        rgba(255,255,255,.28);
+
+    border:
+        1px solid
+        rgba(184,148,92,.18);
+
+    text-decoration: none;
+
+    color: var(--text);
+
+    transition:
+        transform .4s ease,
+        background .4s ease,
+        box-shadow .4s ease;
+}
+
+.contact-card:hover {
+    transform: translateY(-4px);
+
+    background:
+        rgba(255,255,255,.55);
+
+    box-shadow:
+        0 14px 35px
+        rgba(130,100,65,.10);
+}
+
+.contact-card-icon {
+    display: block;
+
+    margin-bottom: 10px;
+
+    font-size: 1.25rem;
+
+    color: var(--gold);
+}
+
+.contact-card-label {
+    display: block;
+
+    margin-bottom: 7px;
+
+    font-size: .52rem;
+
+    text-transform: uppercase;
+
+    letter-spacing: .22em;
+
+    color: var(--gold);
+}
+
+.contact-card-value {
+    font-family:
+        "Cormorant Garamond",
+        serif;
+
+    font-size:
+        clamp(1.05rem, 3vw, 1.45rem);
+
+    font-weight: 600;
+
+    color: #59483b;
+}
+
+.contact-location {
+    grid-column: 1 / -1;
+}
+
+.contact-location .contact-card-value {
+    font-size:
+        clamp(.9rem, 2.5vw, 1.2rem);
+}
+
+.love-note {
+    margin-top: 38px;
+
+    font-family:
+        "Cormorant Garamond",
+        serif;
+
+    font-style: italic;
+
+    font-size: 1.2rem;
+
+    color: #756252;
+}
+
+.signature {
+    margin-top: 10px;
+
+    font-family:
+        "Cormorant Garamond",
+        serif;
+
+    font-size:
+        clamp(1.2rem, 3vw, 1.6rem);
+
+    color: #6e5948;
+}
+
+
+/* ============================================= */
+/* FALLING PETALS */
+/* ============================================= */
+
+.petal-layer {
+    position: absolute;
+
+    inset: 0;
+
+    overflow: hidden;
+
+    pointer-events: none;
+}
+
+.petal {
+    position: absolute;
+
+    top: -10%;
+
+    width: 13px;
+    height: 19px;
+
+    border-radius:
+        70% 30% 70% 30%;
+
+    background:
+        linear-gradient(
+            135deg,
+            #f6e5e1,
+            #d9adaf
+        );
+
+    opacity: .65;
+
+    animation:
+        fallingPetal
+        linear
+        infinite;
+}
+
+.petal:nth-child(1) {
+    left: 5%;
+    animation-duration: 15s;
+    animation-delay: -2s;
+}
+
+.petal:nth-child(2) {
+    left: 15%;
+    animation-duration: 20s;
+    animation-delay: -8s;
+}
+
+.petal:nth-child(3) {
+    left: 28%;
+    animation-duration: 17s;
+    animation-delay: -12s;
+}
+
+.petal:nth-child(4) {
+    left: 42%;
+    animation-duration: 22s;
+    animation-delay: -4s;
+}
+
+.petal:nth-child(5) {
+    left: 56%;
+    animation-duration: 18s;
+    animation-delay: -10s;
+}
+
+.petal:nth-child(6) {
+    left: 70%;
+    animation-duration: 21s;
+    animation-delay: -6s;
+}
+
+.petal:nth-child(7) {
+    left: 82%;
+    animation-duration: 16s;
+    animation-delay: -14s;
+}
+
+.petal:nth-child(8) {
+    left: 92%;
+    animation-duration: 23s;
+    animation-delay: -5s;
+}
+
+
+/* ============================================= */
+/* FLOATING NAVIGATION */
+/* ============================================= */
+
+.navigation {
+    position: fixed;
+
+    z-index: 100;
+
+    right:
+        max(18px, env(safe-area-inset-right));
+
+    top: 50%;
+
+    transform:
+        translateY(-50%);
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 14px;
+}
+
+.nav-dot {
+    width: 9px;
+    height: 9px;
+
+    border-radius: 50%;
+
+    border:
+        1px solid
+        rgba(120,95,70,.6);
+
+    background:
+        rgba(255,255,255,.4);
+
+    cursor: pointer;
+
+    transition: .4s ease;
+}
+
+.nav-dot.active {
+    height: 28px;
+
+    border-radius: 10px;
+
+    background: var(--gold);
+
+    border-color: var(--gold);
+}
+
+
+/* ============================================= */
+/* MUSIC CONTROL */
+/* ============================================= */
+
+.music-control {
+    position: fixed;
+
+    z-index: 200;
+
+    top:
+        max(18px, env(safe-area-inset-top));
+
+    right:
+        max(18px, env(safe-area-inset-right));
+
+    width: 48px;
+    height: 48px;
+
+    border-radius: 50%;
+
+    border:
+        1px solid
+        rgba(184,148,92,.45);
+
+    background:
+        rgba(255,255,255,.45);
+
+    backdrop-filter:
+        blur(12px);
+
+    color: var(--gold);
+
+    cursor: pointer;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+}
+
+.waves {
+    display: none;
+
+    align-items: center;
+
+    gap: 2px;
+
+    height: 18px;
+}
+
+.waves span {
+    width: 2px;
+
+    background: var(--gold);
+
+    animation:
+        soundWave
+        .8s
+        ease-in-out
+        infinite
+        alternate;
+}
+
+.waves span:nth-child(1) {
+    height: 6px;
+}
+
+.waves span:nth-child(2) {
+    height: 12px;
+    animation-delay: .15s;
+}
+
+.waves span:nth-child(3) {
+    height: 7px;
+    animation-delay: .3s;
+}
+
+.music-control.playing .music-icon {
+    display: none;
+}
+
+.music-control.playing .waves {
+    display: flex;
+}
+
+
+/* ============================================= */
+/* ANIMATIONS */
+/* ============================================= */
+
+@keyframes loaderReveal {
+
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes emblemFloat {
+
+    0%, 100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+@keyframes slowZoom {
+
+    from {
+        transform: scale(1);
+    }
+
+    to {
+        transform: scale(1.1);
+    }
+}
+
+@keyframes lightMove {
+
+    from {
+        transform:
+            translate(0,0)
+            scale(1);
+    }
+
+    to {
+        transform:
+            translate(18vw,12vh)
+            scale(1.15);
+    }
+}
+
+@keyframes botanicalFloat {
+
+    from {
+        margin-top: 0;
+        rotate: -1deg;
+    }
+
+    to {
+        margin-top: 18px;
+        rotate: 2deg;
+    }
+}
+
+@keyframes bokehMove {
+
+    from {
+        transform: translate(0,0);
+    }
+
+    to {
+        transform: translate(-25px,25px);
+    }
+}
+
+@keyframes fallingPetal {
+
+    from {
+        top: -10%;
+
+        transform:
+            translateX(0)
+            rotate(0deg);
+    }
+
+    to {
+        top: 110%;
+
+        transform:
+            translateX(90px)
+            rotate(400deg);
+    }
+}
+
+@keyframes scrollPulse {
+
+    0%,100% {
+        opacity: .4;
+        transform: translateY(0);
+    }
+
+    50% {
+        opacity: 1;
+        transform: translateY(8px);
+    }
+}
+
+@keyframes soundWave {
+
+    from {
+        transform: scaleY(.4);
+    }
+
+    to {
+        transform: scaleY(1.3);
+    }
+}
+
+
+/* ============================================= */
+/* MOBILE RESPONSIVE */
+/* ============================================= */
+
+@media (max-width: 650px) {
+
+    .wedding-section {
+        min-height: 100svh;
+
+        padding:
+            90px
+            20px;
+    }
+
+    .floral {
+        width: 65vw;
+        opacity: .45;
+    }
+
+    .islamic-arch {
+        width: 92vw;
+        height: 135vw;
+    }
+
+    .navigation {
+        top: auto;
+
+        bottom:
+            max(
+                20px,
+                env(safe-area-inset-bottom)
+            );
+
+        right: 50%;
+
+        transform:
+            translateX(50%);
+
+        flex-direction: row;
+    }
+
+    .nav-dot.active {
+        width: 28px;
+        height: 9px;
+    }
+
+    .countdown {
+        padding:
+            16px
+            8px;
+
+        border-radius: 18px;
+    }
+
+    .count-number {
+        font-size: 1.75rem;
+    }
+
+    .music-control {
+        width: 43px;
+        height: 43px;
+    }
+
+    .contact-panel {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-location {
+        grid-column: auto;
+    }
+
+}
+
+
+/* ============================================= */
+/* ACCESSIBILITY - REDUCED MOTION */
+/* ============================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+    *,
+    *::before,
+    *::after {
+
+        animation-duration: .01ms !important;
+
+        animation-iteration-count: 1 !important;
+
+        transition-duration: .01ms !important;
+
+        scroll-behavior: auto !important;
+    }
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<!-- ============================================= -->
+
+<!-- LOADING SCREEN -->
+
+<!-- ============================================= -->
+
+<div id="loader">
+
+```
+<div class="loader-content">
+
+    <div class="loader-emblem"></div>
+
+    <div class="loader-name">
+        Nazal Sha
+    </div>
+
+    <div class="loader-amp">
+        &
+    </div>
+
+    <div class="loader-name">
+        Aliya Fathima
+    </div>
+
+    <div class="loader-text">
+        Preparing A Beautiful Reception...
+    </div>
+
+</div>
+```
+
+</div>
+
+<!-- ============================================= -->
+
+<!-- BACKGROUND MUSIC -->
+
+<!-- ============================================= -->
+
+<!--
+
+HOW TO ADD MUSIC:
+
+1. Download a soft instrumental MP3.
+2. Rename the music file to:
+
+   wedding-music.mp3
+
+3. Put the MP3 in the SAME folder as index.html.
+
+Your folder should look like:
+
+Wedding Website
+│
+├── index.html
+│
+└── wedding-music.mp3
+
+Music will NOT autoplay.
+Guests must click the music button.
+
+-->
+
+<audio
+ id="backgroundMusic"
+ loop
+ preload="metadata">
+
+```
+<source
+    src="wedding-music.mp3"
+    type="audio/mpeg">
+```
+
+</audio>
+
+<!-- ============================================= -->
+
+<!-- MUSIC CONTROL -->
+
+<!-- ============================================= -->
+
+<button
+ class="music-control"
+ id="musicButton"
+ aria-label="Play background music">
+
+```
+<span class="music-icon">
+    ♫
+</span>
+
+<span class="waves">
+    <span></span>
+    <span></span>
+    <span></span>
+</span>
+```
+
+</button>
+
+<!-- ============================================= -->
+
+<!-- FLOATING NAVIGATION -->
+
+<!-- ============================================= -->
+
+<nav class="navigation">
+
+```
+<button
+    class="nav-dot active"
+    data-target="home"
+    aria-label="Home">
+</button>
+
+<button
+    class="nav-dot"
+    data-target="date"
+    aria-label="Save the Date">
+</button>
+
+<button
+    class="nav-dot"
+    data-target="celebration"
+    aria-label="Reception Details">
+</button>
+
+<button
+    class="nav-dot"
+    data-target="rsvp"
+    aria-label="RSVP and Contact">
+</button>
+```
+
+</nav>
+
+<!-- ============================================= -->
+
+<!-- SECTION 1 - GRAND OPENING -->
+
+<!-- ============================================= -->
+
+<section
+    id="home"
+    class="wedding-section">
+
+```
+<div class="background-gradient"></div>
+
+<div class="background-light"></div>
+
+<div class="pattern-layer"></div>
+
+<div class="bokeh"></div>
+
+
+<!-- FLORAL ART -->
+
+<div class="floral top-left">
+
+    <svg viewBox="0 0 500 500">
+
+        <path
+            class="stem"
+            d="M30 460 Q180 290 350 80"/>
+
+        <path
+            class="leaf"
+            d="M110 350 Q55 300 85 250 Q150 275 110 350"/>
+
+        <path
+            class="leaf"
+            d="M180 270 Q230 210 285 225 Q245 290 180 270"/>
+
+        <path
+            class="leaf"
+            d="M240 190 Q185 140 205 100 Q275 125 240 190"/>
+
+        <g transform="translate(335 75)">
+
+            <ellipse
+                class="rose"
+                cx="0"
+                cy="-28"
+                rx="20"
+                ry="35"/>
+
+            <ellipse
+                class="rose"
+                cx="28"
+                cy="0"
+                rx="35"
+                ry="20"/>
+
+            <ellipse
+                class="rose"
+                cx="0"
+                cy="28"
+                rx="20"
+                ry="35"/>
+
+            <ellipse
+                class="rose"
+                cx="-28"
+                cy="0"
+                rx="35"
+                ry="20"/>
+
+            <circle
+                class="center"
+                r="13"/>
+
+        </g>
+
+    </svg>
+
+</div>
+
+
+<div class="floral bottom-right">
+
+    <svg viewBox="0 0 500 500">
+
+        <path
+            class="stem"
+            d="M30 460 Q180 290 350 80"/>
+
+        <path
+            class="leaf"
+            d="M110 350 Q55 300 85 250 Q150 275 110 350"/>
+
+        <path
+            class="leaf"
+            d="M180 270 Q230 210 285 225 Q245 290 180 270"/>
+
+        <path
+            class="leaf"
+            d="M240 190 Q185 140 205 100 Q275 125 240 190"/>
+
+    </svg>
+
+</div>
+
+
+<!-- ISLAMIC ARCH -->
+
+<div class="islamic-arch"></div>
+
+
+<!-- CONTENT -->
+
+<div class="section-content">
+
+    <div
+        class="arabic"
+        lang="ar">
+
+        بِسْمِ اللَّهِ الرَّحْمَنِ الرَّحِيم
+
+    </div>
+
+
+    <div class="eyebrow">
+
+        Together With Their Families
+
+    </div>
+
+
+    <div class="reception-badge">
+
+        Wedding Reception
+
+    </div>
+
+
+    <h1 class="couple-names">
+
+        Nazal Sha
+
+    </h1>
+
+
+    <div class="ampersand">
+
+        &
+
+    </div>
+
+
+    <h1 class="couple-names">
+
+        Aliya Fathima
+
+    </h1>
+
+
+    <p class="invitation-message">
+
+        Request the pleasure of your presence as we gather with family and friends to celebrate the joy of our wedding reception.
+
+    </p>
+
+
+    <button
+        class="luxury-button"
+        data-scroll="date">
+
+        Discover Our Celebration
+
+    </button>
+
+
+    <div class="scroll-indicator">
+
+        Scroll To Continue ↓
+
+    </div>
+
+</div>
+```
+
+</section>
+
+<!-- ============================================= -->
+
+<!-- SECTION 2 - SAVE THE DATE -->
+
+<!-- ============================================= -->
+
+<section
+    id="date"
+    class="wedding-section">
+
+```
+<div class="background-gradient"></div>
+
+<div class="background-light"></div>
+
+<div class="pattern-layer"></div>
+
+<div class="bokeh"></div>
+
+
+<!-- FLORAL ART -->
+
+<div class="floral top-right">
+
+    <svg viewBox="0 0 500 500">
+
+        <path
+            class="stem"
+            d="M40 460 Q200 270 430 50"/>
+
+        <path
+            class="leaf"
+            d="M120 360 Q55 320 95 260 Q165 290 120 360"/>
+
+        <path
+            class="leaf"
+            d="M200 270 Q275 230 300 280 Q230 310 200 270"/>
+
+        <path
+            class="leaf"
+            d="M285 180 Q340 120 390 155 Q350 220 285 180"/>
+
+        <g transform="translate(420 60)">
+
+            <ellipse
+                class="rose"
+                cx="0"
+                cy="-24"
+                rx="19"
+                ry="31"/>
+
+            <ellipse
+                class="rose"
+                cx="24"
+                cy="0"
+                rx="31"
+                ry="19"/>
+
+            <ellipse
+                class="rose"
+                cx="0"
+                cy="24"
+                rx="19"
+                ry="31"/>
+
+            <ellipse
+                class="rose"
+                cx="-24"
+                cy="0"
+                rx="31"
+                ry="19"/>
+
+            <circle
+                class="center"
+                r="11"/>
+
+        </g>
+
+    </svg>
+
+</div>
+
+
+<div class="floral bottom-left">
+
+    <svg viewBox="0 0 500 500">
+
+        <path
+            class="stem"
+            d="M40 460 Q200 270 430 50"/>
+
+        <path
+            class="leaf"
+            d="M120 360 Q55 320 95 260 Q165 290 120 360"/>
+
+        <path
+            class="leaf"
+            d="M200 270 Q275 230 300 280 Q230 310 200 270"/>
+
+    </svg>
+
+</div>
+
+
+<!-- CONTENT -->
+
+<div class="section-content">
+
+    <div class="reception-badge">
+
+        Wedding Reception
+
+    </div>
+
+
+    <div class="save-date-title">
+
+        SAVE THE DATE
+
+    </div>
+
+
+    <div class="date-number">
+
+        21
+
+    </div>
+
+
+    <div class="date-month">
+
+        DECEMBER
+
+    </div>
+
+
+    <div class="date-year">
+
+        2026
+
+    </div>
+
+
+    <div class="weekday">
+
+        MONDAY
+
+    </div>
+
+
+    <p class="chapter-text">
+
+        A beautiful evening of celebration awaits.
+
+    </p>
+
+
+    <!-- COUNTDOWN -->
+
+    <div
+        class="countdown"
+        aria-label="Wedding reception countdown">
+
+        <div class="count-item">
+
+            <div
+                class="count-number"
+                id="days">
+
+                000
+
+            </div>
+
+            <div class="count-label">
+
+                Days
+
+            </div>
+
+        </div>
+
+
+        <div class="count-item">
+
+            <div
+                class="count-number"
+                id="hours">
+
+                00
+
+            </div>
+
+            <div class="count-label">
+
+                Hours
+
+            </div>
+
+        </div>
+
+
+        <div class="count-item">
+
+            <div
+                class="count-number"
+                id="minutes">
+
+                00
+
+            </div>
+
+            <div class="count-label">
+
+                Minutes
+
+            </div>
+
+        </div>
+
+
+        <div class="count-item">
+
+            <div
+                class="count-number"
+                id="seconds">
+
+                00
+
+            </div>
+
+            <div class="count-label">
+
+                Seconds
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+```
+
+</section>
+
+<!-- ============================================= -->
+
+<!-- SECTION 3 - THE RECEPTION -->
+
+<!-- ============================================= -->
+
+<section
+    id="celebration"
+    class="wedding-section">
+
+```
+<div class="background-gradient"></div>
+
+<div class="background-light"></div>
+
+<div class="pattern-layer"></div>
+
+<div class="bokeh"></div>
+
+
+<!-- FLORAL ART -->
+
+<div class="floral top-left">
+
+    <svg viewBox="0 0 500 500">
+
+        <path
+            class="stem"
+            d="M30 470 Q190 300 400 70"/>
+
+        <path
+            class="leaf"
+            d="M100 380 Q40 330 70 270 Q145 300 100 380"/>
+
+        <path
+            class="leaf"
+            d="M170 290 Q220 230 270 245 Q230 310 170 290"/>
+
+        <path
+            class="leaf"
+            d="M260 200 Q320 130 370 160 Q325 225 260 200"/>
+
+    </svg>
+
+</div>
+
+
+<div class="floral bottom-right">
+
+    <svg viewBox="0 0 500 500">
+
+        <path
+            class="stem"
+            d="M30 470 Q190 300 400 70"/>
+
+        <path
+            class="leaf"
+            d="M100 380 Q40 330 70 270 Q145 300 100 380"/>
+
+        <path
+            class="leaf"
+            d="M170 290 Q220 230 270 245 Q230 310 170 290"/>
+
+    </svg>
+
+</div>
+
+
+<div class="islamic-arch"></div>
+
+
+<!-- CONTENT -->
+
+<div class="section-content">
+
+    <div class="reception-badge">
+
+        Wedding Reception
+
+    </div>
+
+
+    <h2 class="section-title">
+
+        THE RECEPTION
+
+    </h2>
+
+
+    <div class="event-card">
+
+
+        <!-- VENUE -->
+
+        <div class="event-row">
+
+            <div class="event-label">
+
+                Venue
+
+            </div>
+
+            <div class="event-value">
+
+                NETTOOR MAHALLU AUDITORIUM
+
+            </div>
+
+            <div class="event-location">
+
+                📍 Nettoor, Kochi, Kerala
+
+            </div>
+
+        </div>
+
+
+        <!-- DATE -->
+
+        <div class="event-row">
+
+            <div class="event-label">
+
+                Date
+
+            </div>
+
+            <div class="event-value">
+
+                December 21, 2026
+
+            </div>
+
+        </div>
+
+
+        <!-- TIME -->
+
+        <div class="event-row">
+
+            <div class="event-label">
+
+                Time
+
+            </div>
+
+            <div class="event-value">
+
+                6:00 PM – 9:30 PM
+
+            </div>
+
+        </div>
+
+
+        <!-- LOCATION -->
+
+        <a
+            href="https://share.google/PE4u4audNzBK68NZX"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="luxury-button">
+
+            View Reception Location
+
+        </a>
+
+    </div>
+
+</div>
+```
+
+</section>
+
+<!-- ============================================= -->
+
+<!-- SECTION 4 - RSVP & CONTACT -->
+
+<!-- ============================================= -->
+
+<section
+    id="rsvp"
+    class="wedding-section">
+
+```
+<div class="background-gradient"></div>
+
+<div class="background-light"></div>
+
+<div class="pattern-layer"></div>
+
+<div class="bokeh"></div>
+
+
+<!-- FALLING PETALS -->
+
+<div class="petal-layer">
+
+    <span class="petal"></span>
+    <span class="petal"></span>
+    <span class="petal"></span>
+    <span class="petal"></span>
+    <span class="petal"></span>
+    <span class="petal"></span>
+    <span class="petal"></span>
+    <span class="petal"></span>
+
+</div>
+
+
+<!-- FLORAL ART -->
+
+<div class="floral top-left">
+
+    <svg viewBox="0 0 500 500">
+
+        <path
+            class="stem"
+            d="M30 470 Q190 300 410 45"/>
+
+        <path
+            class="leaf"
+            d="M100 380 Q35 330 75 260 Q155 300 100 380"/>
+
+        <path
+            class="leaf"
+            d="M190 280 Q260 220 300 265 Q235 315 190 280"/>
+
+        <g transform="translate(405 52)">
+
+            <ellipse
+                class="rose"
+                cx="0"
+                cy="-30"
+                rx="22"
+                ry="38"/>
+
+            <ellipse
+                class="rose"
+                cx="30"
+                cy="0"
+                rx="38"
+                ry="22"/>
+
+            <ellipse
+                class="rose"
+                cx="0"
+                cy="30"
+                rx="22"
+                ry="38"/>
+
+            <ellipse
+                class="rose"
+                cx="-30"
+                cy="0"
+                rx="38"
+                ry="22"/>
+
+            <circle
+                class="center"
+                r="13"/>
+
+        </g>
+
+    </svg>
+
+</div>
+
+
+<div class="floral bottom-right">
+
+    <svg viewBox="0 0 500 500">
+
+        <path
+            class="stem"
+            d="M30 470 Q190 300 410 45"/>
+
+        <path
+            class="leaf"
+            d="M100 380 Q35 330 75 260 Q155 300 100 380"/>
+
+        <path
+            class="leaf"
+            d="M190 280 Q260 220 300 265 Q235 315 190 280"/>
+
+    </svg>
+
+</div>
+
+
+<!-- CONTENT -->
+
+<div class="section-content">
+
+
+    <div class="reception-badge">
+
+        Wedding Reception
+
+    </div>
+
+
+    <h2 class="final-title">
+
+        WE WOULD BE HONOURED
+
+        <span class="final-subtitle">
+
+            BY YOUR PRESENCE
+
+        </span>
+
+    </h2>
+
+
+    <div class="reception-divider"></div>
+
+
+    <p class="final-message">
+
+        Join us for an evening filled with love, joy, family and beautiful memories as we celebrate our wedding reception together.
+
+    </p>
+
+
+    <!-- RECEPTION DETAILS -->
+
+    <div class="final-details">
+
+        <div>
+
+            December 21, 2026
+
+        </div>
+
+        <div>
+
+            6:00 PM – 9:30 PM
+
+        </div>
+
+        <div>
+
+            Nettoor Mahallu Auditorium
+
+        </div>
+
+    </div>
+
+
+    <!-- RSVP -->
+
+    <p class="rsvp-intro">
+
+        Kindly Confirm Your Presence
+
+    </p>
+
+
+    <button
+        id="rsvpButton"
+        class="luxury-button rsvp-button"
+        aria-label="RSVP via WhatsApp">
+
+        RSVP ON WHATSAPP
+
+    </button>
+
+
+    <!-- CONTACT PANEL -->
+
+    <div class="contact-panel">
+
+
+        <!-- CONTACT NUMBER -->
+
+        <a
+            href="tel:+918089151816"
+            class="contact-card"
+            aria-label="Call +91 80891 51816">
+
+            <span class="contact-card-icon">
+
+                ☎
+
+            </span>
+
+            <span class="contact-card-label">
+
+                Contact
+
+            </span>
+
+            <span class="contact-card-value">
+
+                +91 80891 51816
+
+            </span>
+
+        </a>
+
+
+        <!-- WHATSAPP -->
+
+        <a
+            href="https://wa.me/918089151816"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="contact-card"
+            aria-label="Contact on WhatsApp">
+
+            <span class="contact-card-icon">
+
+                ◉
+
+            </span>
+
+            <span class="contact-card-label">
+
+                WhatsApp
+
+            </span>
+
+            <span class="contact-card-value">
+
+                Chat With Us
+
+            </span>
+
+        </a>
+
+
+        <!-- LOCATION -->
+
+        <a
+            href="https://share.google/PE4u4audNzBK68NZX"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="contact-card contact-location"
+            aria-label="Open Reception Location">
+
+            <span class="contact-card-icon">
+
+                📍
+
+            </span>
+
+            <span class="contact-card-label">
+
+                Reception Location
+
+            </span>
+
+            <span class="contact-card-value">
+
+                Nettoor Mahallu Auditorium
+
+                <br>
+
+                Nettoor, Kochi, Kerala
+
+            </span>
+
+        </a>
+
+
+    </div>
+
+
+    <!-- FINAL MESSAGE -->
+
+    <div class="love-note">
+
+        With Love &amp; Duas
+
+    </div>
+
+
+    <div class="signature">
+
+        Nazal Sha &amp; Aliya Fathima
+
+    </div>
+
+
+</div>
+```
+
+</section>
+
+<script>
+
+/* ============================================= */
+/* SMOOTH NAVIGATION */
+/* ============================================= */
+
+const navDots =
+    document.querySelectorAll(".nav-dot");
+
+const sections =
+    document.querySelectorAll(".wedding-section");
+
+
+function scrollToSection(sectionID) {
+
+    const section =
+        document.getElementById(sectionID);
+
+    if (!section) return;
+
+    section.scrollIntoView({
+        behavior: "smooth",
+        block: "start"
+    });
+
+}
+
+
+/* NAVIGATION DOTS */
+
+navDots.forEach(dot => {
+
+    dot.addEventListener("click", () => {
+
+        scrollToSection(
+            dot.dataset.target
+        );
+
+    });
+
+});
+
+
+/* SCROLL BUTTONS */
+
+document.querySelectorAll("[data-scroll]")
+.forEach(button => {
+
+    button.addEventListener("click", () => {
+
+        scrollToSection(
+            button.dataset.scroll
+        );
+
+    });
+
+});
+
+
+/* ============================================= */
+/* ACTIVE NAVIGATION */
+/* ============================================= */
+
+const observer = new IntersectionObserver(
+
+    entries => {
+
+        entries.forEach(entry => {
+
+            if (entry.isIntersecting) {
+
+                const currentID =
+                    entry.target.id;
+
+                navDots.forEach(dot => {
+
+                    dot.classList.toggle(
+
+                        "active",
+
+                        dot.dataset.target ===
+                        currentID
+
+                    );
+
+                });
+
+            }
+
+        });
+
+    },
+
+    {
+        threshold: 0.55
+    }
+
+);
+
+
+sections.forEach(section => {
+
+    observer.observe(section);
+
+});
+
+
+/* ============================================= */
+/* COUNTDOWN SYSTEM */
+/* ============================================= */
+
+/*
+Wedding Reception Date:
+
+December 21, 2026
+6:00 PM
+India Standard Time
+*/
+
+const receptionDate =
+    new Date(
+        "2026-12-21T18:00:00+05:30"
+    ).getTime();
+
+
+function updateCountdown() {
+
+    const now =
+        Date.now();
+
+    let difference =
+        receptionDate - now;
+
+
+    if (difference <= 0) {
+
+        document.getElementById("days")
+            .textContent = "000";
+
+        document.getElementById("hours")
+            .textContent = "00";
+
+        document.getElementById("minutes")
+            .textContent = "00";
+
+        document.getElementById("seconds")
+            .textContent = "00";
+
+        return;
+    }
+
+
+    const days =
+        Math.floor(
+            difference /
+            (1000 * 60 * 60 * 24)
+        );
+
+
+    difference %=
+        (1000 * 60 * 60 * 24);
+
+
+    const hours =
+        Math.floor(
+            difference /
+            (1000 * 60 * 60)
+        );
+
+
+    difference %=
+        (1000 * 60 * 60);
+
+
+    const minutes =
+        Math.floor(
+            difference /
+            (1000 * 60)
+        );
+
+
+    difference %=
+        (1000 * 60);
+
+
+    const seconds =
+        Math.floor(
+            difference / 1000
+        );
+
+
+    document.getElementById("days")
+        .textContent =
+        String(days).padStart(3, "0");
+
+
+    document.getElementById("hours")
+        .textContent =
+        String(hours).padStart(2, "0");
+
+
+    document.getElementById("minutes")
+        .textContent =
+        String(minutes).padStart(2, "0");
+
+
+    document.getElementById("seconds")
+        .textContent =
+        String(seconds).padStart(2, "0");
+
+}
+
+
+updateCountdown();
+
+setInterval(
+    updateCountdown,
+    1000
+);
+
+
+/* ============================================= */
+/* WHATSAPP RSVP SYSTEM */
+/* ============================================= */
+
+const whatsappNumber =
+    "918089151816";
+
+
+const rsvpButton =
+    document.getElementById("rsvpButton");
+
+
+rsvpButton.addEventListener(
+
+    "click",
+
+    () => {
+
+
+        const message =
+
+`Assalamu Alaikum,
+
+I am delighted to confirm my presence for the wedding reception of Nazal Sha & Aliya Fathima on December 21, 2026.
+
+I look forward to celebrating this beautiful occasion with you.`;
+
+
+        const whatsappURL =
+
+            `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;
+
+
+        window.open(
+
+            whatsappURL,
+
+            "_blank",
+
+            "noopener,noreferrer"
+
+        );
+
+    }
+
+);
+
+
+/* ============================================= */
+/* MUSIC SYSTEM */
+/* ============================================= */
+
+const musicButton =
+    document.getElementById(
+        "musicButton"
+    );
+
+
+const backgroundMusic =
+    document.getElementById(
+        "backgroundMusic"
+    );
+
+
+let musicPlaying = false;
+
+
+musicButton.addEventListener(
+
+    "click",
+
+    async () => {
+
+        try {
+
+            if (!musicPlaying) {
+
+                await backgroundMusic.play();
+
+                musicPlaying = true;
+
+                musicButton.classList.add(
+                    "playing"
+                );
+
+                musicButton.setAttribute(
+
+                    "aria-label",
+
+                    "Pause background music"
+
+                );
+
+            }
+
+            else {
+
+                backgroundMusic.pause();
+
+                musicPlaying = false;
+
+                musicButton.classList.remove(
+                    "playing"
+                );
+
+                musicButton.setAttribute(
+
+                    "aria-label",
+
+                    "Play background music"
+
+                );
+
+            }
+
+        }
+
+        catch (error) {
+
+            console.warn(
+
+                "Music could not be played.",
+
+                error
+
+            );
+
+
+            alert(
+
+                "Please add a valid file named wedding-music.mp3 in the same folder as index.html."
+
+            );
+
+        }
+
+    }
+
+);
+
+
+/* ============================================= */
+/* SUBTLE DESKTOP PARALLAX */
+/* ============================================= */
+
+const florals =
+    document.querySelectorAll(
+        ".floral"
+    );
+
+
+const reducedMotion =
+    window.matchMedia(
+        "(prefers-reduced-motion: reduce)"
+    ).matches;
+
+
+if (
+
+    !reducedMotion &&
+
+    window.matchMedia(
+        "(pointer: fine)"
+    ).matches
+
+) {
+
+    document.addEventListener(
+
+        "mousemove",
+
+        event => {
+
+            const x =
+
+                event.clientX /
+                window.innerWidth -
+                .5;
+
+
+            const y =
+
+                event.clientY /
+                window.innerHeight -
+                .5;
+
+
+            florals.forEach(
+
+                (floral, index) => {
+
+                    const intensity =
+
+                        (index % 3 + 1) * 4;
+
+
+                    floral.style.translate =
+
+                        `${x * intensity}px ${y * intensity}px`;
+
+                }
+
+            );
+
+        }
+
+    );
+
+}
+
+
+/* ============================================= */
+/* LOADING SCREEN */
+/* ============================================= */
+
+window.addEventListener(
+
+    "load",
+
+    () => {
+
+        setTimeout(
+
+            () => {
+
+                document
+                    .getElementById("loader")
+                    .classList
+                    .add("hide");
+
+            },
+
+            2400
+
+        );
+
+    }
+
+);
+
+</script>
+
+</body>
+</html>
