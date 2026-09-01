@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wedding Reception | Nazal Sha & Aliya Fathima</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&family=Lato:wght@300;400;500&display=swap" rel="stylesheet">
+    
+    <style>
+        /* Base Reset */
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html { scroll-behavior: smooth; }
+        
+        body {
+            font-family: 'Lato', sans-serif;
+            background-color: #faf7f5; 
+            color: #4a4a4a; 
+            text-align: center;
+            overflow-x: hidden;
+        }
+
+        h1, h2, h3, .serif-text {
+            font-family: 'Playfair Display', serif;
+            font-weight: 500;
+            color: #b78c44; 
+        }
+
+        .arabic {
+            font-family: 'Amiri', serif;
+            font-size: 2.5rem;
+            color: #b78c44;
+            margin-bottom: 15px;
+            font-weight: normal;
+        }
+
+        .symbol {
+            font-size: 2.5rem;
+            color: #b78c44;
+            margin: 10px 0;
+            opacity: 0.9;
+        }
+
+        /* * * BULLETPROOF MOBILE SECTION LAYOUT * * * */
+        .section-layout {
+            position: relative; 
+            min-height: 100vh;
+            min-height: 100svh; 
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 60px 20px;
+            overflow: hidden; 
+        }
+
+        /* The Physical Background Image */
+        .bg-img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover; 
+            z-index: -2; 
+        }
+
+        /* The Pastel Color Overlay */
+        .bg-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1; 
+        }
+
+        /* Unique Overlays tailored to make each specific floral background pop while keeping text readable */
+        #page-1 .bg-overlay { background-color: rgba(250, 247, 245, 0.65); }
+        #page-2 .bg-overlay { background-color: rgba(250, 247, 245, 0.70); }
+        #page-3 .bg-overlay { background-color: rgba(250, 247, 245, 0.65); }
+        #page-4 .bg-overlay { background-color: rgba(250, 247, 245, 0.75); }
+
+        /* Content Wrappers (Ensures text stays on top) */
+        .content-wrapper {
+            position: relative;
+            z-index: 1; 
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        /* Typography Styling */
+        .hero-title {
+            font-size: clamp(3rem, 7vw, 5rem); 
+            line-height: 1.15;
+            letter-spacing: 1px;
+            margin: 20px 0;
+            color: #3b3a38; 
+            font-family: 'Playfair Display', serif;
+        }
+
+        .subtitle {
+            font-size: 0.9rem;
+            letter-spacing: 4px;
+            text-transform: uppercase;
+            margin-top: 15px;
+            color: #5a5653;
+            font-weight: 600;
+        }
+
+        /* Frosted Glassmorphism Cards */
+        .glass-panel {
+            background: rgba(255, 255, 255, 0.75); 
+            backdrop-filter: blur(12px); 
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.9);
+            border-radius: 12px;
+            padding: 60px 40px;
+            max-width: 650px;
+            width: 100%;
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
+            margin: 20px;
+        }
+
+        .glass-panel h2 {
+            font-size: 2.2rem;
+            margin-bottom: 20px;
+            letter-spacing: 2px;
+        }
+
+        .glass-panel p {
+            font-size: 1.1rem;
+            line-height: 2.2;
+            margin-bottom: 20px;
+            font-weight: 400;
+        }
+
+        .gold-accent {
+            color: #b78c44;
+            font-family: 'Playfair Display', serif;
+            font-size: 1.4rem;
+            font-style: italic;
+            display: block;
+            margin: 20px 0;
+        }
+
+        .divider {
+            width: 50px;
+            height: 1.5px;
+            background-color: #b78c44;
+            margin: 25px auto;
+        }
+
+        /* Luxury Button Layouts */
+        .btn {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 14px 35px;
+            background-color: transparent;
+            color: #b78c44;
+            border: 1.5px solid #b78c44;
+            text-decoration: none;
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            font-weight: 500;
+            transition: all 0.4s ease;
+            border-radius: 4px;
+        }
+
+        .btn:hover {
+            background-color: #b78c44;
+            color: #fff;
+        }
+
+        /* Multi-Button Layout for Page 4 */
+        .btn-row {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            flex-wrap: wrap;
+            width: 100%;
+            margin-top: 10px;
+        }
+
+        .btn-half {
+            flex: 1;
+            min-width: 120px;
+            max-width: 180px;
+            padding: 14px 15px;
+            letter-spacing: 2px; /* Slightly tighter spacing for dual buttons */
+        }
+
+        /* Scroll Animation */
+        .scroll-down {
+            position: absolute;
+            bottom: 30px;
+            font-size: 0.7rem;
+            letter-spacing: 4px;
+            text-transform: uppercase;
+            color: #5a5653;
+            text-decoration: none;
+            font-weight: 600;
+            animation: float 2s ease-in-out infinite;
+            z-index: 2;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-8px); }
+        }
+
+        @media (max-width: 600px) {
+            .glass-panel { padding: 45px 25px; }
+            .arabic { font-size: 2rem; }
+            .hero-title { font-size: 2.8rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <section id="page-1" class="section-layout">
+        <img src="https://images.unsplash.com/photo-1563241527-3004b7be0ffd?q=80&w=2000&auto=format&fit=crop" class="bg-img" alt="Elegant White and Blush Roses">
+        <div class="bg-overlay"></div>
+        
+        <div class="content-wrapper">
+            <div class="arabic">بِسْمِ اللَّهِ الرَّحْمَنِ الرَّحِيم</div>
+            <div class="symbol">☪</div>
+            <p class="subtitle">Together with their families</p>
+            <h1 class="hero-title">Nazal Sha <br>&<br> Aliya Fathima</h1>
+            <p class="subtitle">Joyfully invite you to their Wedding Reception</p>
+        </div>
+        <a href="#page-2" class="scroll-down">Scroll to View</a>
+    </section>
+
+    <section id="page-2" class="section-layout">
+        <img src="https://images.unsplash.com/photo-1550100136-e092101726f4?q=80&w=2000&auto=format&fit=crop" class="bg-img" alt="Cream and Blush Floral Layout">
+        <div class="bg-overlay"></div>
+        
+        <div class="content-wrapper">
+            <div class="glass-panel">
+                <h2>Assalamu Alaikum</h2>
+                <div class="divider"></div>
+                <p>
+                    All praise is due to Allah (SWT), the Most Gracious and the Most Merciful. 
+                    With His abundant blessings, two families are uniting through the sacred bond of marriage.
+                </p>
+                <p>
+                    To our beloved friends and family, your love, guidance, and prayers have shaped our lives. It is with our hearts full of immense joy that we invite you to celebrate this beautiful milestone with us.
+                </p>
+                <span class="gold-accent">"And we created you in pairs" <br><span style="font-size: 1rem; font-family: 'Lato', sans-serif; font-style: normal;">(Quran 78:8)</span></span>
+            </div>
+        </div>
+    </section>
+
+    <section id="page-3" class="section-layout">
+        <img src="https://images.unsplash.com/photo-1518895949257-7621c3c786d7?q=80&w=2000&auto=format&fit=crop" class="bg-img" alt="Soft Pastel Roses Background">
+        <div class="bg-overlay"></div>
+        
+        <div class="content-wrapper">
+            <div class="glass-panel">
+                <h2>The Celebration</h2>
+                <div class="divider"></div>
+                
+                <p>We warmly welcome you to join us for an evening of dining, joy, and togetherness.</p>
+                
+                <br>
+                <span class="gold-accent" style="font-size: 1.6rem; font-style: normal;">Monday, December 21st, 2026</span>
+                <p style="font-size: 1.2rem; font-weight: 500; color: #3b3a38; margin-top: -10px;">06:00 PM to 09:30 PM</p>
+                
+                <br>
+                <div class="divider" style="width: 30px;"></div>
+                
+                <span class="gold-accent" style="font-size: 1.8rem; font-style: normal; color: #3b3a38;">Nettoor Mahallu Auditorium</span>
+                <p>Nettoor, Ernakulam, Kerala</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="page-4" class="section-layout">
+        <img src="https://images.unsplash.com/photo-1527061011665-3652c757a4d4?q=80&w=2000&auto=format&fit=crop" class="bg-img" alt="Ultra Luxury Pastel Roses">
+        <div class="bg-overlay"></div>
+        
+        <div class="content-wrapper">
+            <div class="glass-panel">
+                <div class="symbol" style="font-size: 2rem; margin-bottom: 5px;">❁</div>
+                <p style="margin-bottom: 5px;">
+                    We look forward to sharing this blessed evening with you. Please keep us in your warmest prayers.
+                </p>
+                
+                <div class="divider" style="margin: 25px auto;"></div>
+                
+                <p style="font-size: 0.85rem; letter-spacing: 2px; text-transform: uppercase; color: #7a7571; margin-bottom: 5px;">Event Location</p>
+                <a href="https://share.google/PE4u4audNzBK68NZX" target="_blank" class="btn">View on Map</a>
+                
+                <div class="divider" style="width: 30px; margin: 25px auto;"></div>
+                
+                <p style="font-size: 0.85rem; letter-spacing: 2px; text-transform: uppercase; color: #7a7571; margin-bottom: 5px;">Kindly RSVP</p>
+                <p style="font-size: 1.3rem; font-family: 'Playfair Display', serif; color: #b78c44; margin-bottom: 5px;">+91 80891 51816</p>
+                
+                <div class="btn-row">
+                    <a href="https://wa.me/918089151816" target="_blank" class="btn btn-half">WhatsApp</a>
+                    <a href="tel:+918089151816" class="btn btn-half">Call Us</a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>
